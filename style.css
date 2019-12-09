@@ -100,21 +100,6 @@ body
 {
     color: #fff !important;
 }
-.skills-bar p
-{
-    margin-bottom: 6px;
-    font-weight: 600;
-}
-.progress
-{
-    border-radius: 16px !important;
-    margin-bottom: 10px;
-}
-.progress-bar
-{
-    border-radius: 16px;
-    background: #000 !important;
-}
 
 /*--Resume--*/
 .resume
@@ -180,6 +165,7 @@ body
 {
     padding-top: 50px;
     padding-bottom: 50px;
+    color: #000;
 }
 .projects h1
 {
@@ -192,17 +178,20 @@ body
     margin-top: 20px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    color: #000;
 }
 .projects-box .fa
 {
     margin: 0 10px;
     font-size: 20px;
+    color: #000;
 }
 .projects-box span
 {
     margin: 3px;
     font-size: 20px;
     font-weight: bold;
+    color: #000;
 }
 .projects-box p
 {
@@ -221,6 +210,18 @@ body
     transition: 1s;
 }
 .projects-box:hover p
+{
+    color: #fff;
+}
+.projects-box:hover span
+{
+    color: #fff;
+}
+.projects-box:hover .fa
+{
+    color: #fff;
+}
+.projects .col-md-4 a
 {
     color: #fff;
 }
