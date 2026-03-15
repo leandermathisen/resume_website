@@ -1,214 +1,236 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Leander Mathisen</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" type="image/x-icon" href="images/Logo.png">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leander Mathisen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/Logo.png">
 </head>
 <body>
-   
-    <!--Header Section-->
-    <section id="header">
-        <div class="container text-center">
-            <div class="user-box">
-                <h1>
-                    Leander Mathisen
-                </h1>
-                <p>
-                    Computer Engineering Student at the University of Toronto
-                </p>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="#hero">
+                <img src="images/Logo.png" alt="Logo">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name">Leander Mathisen</h1>
+            <p class="hero-title">Software Engineer II @ Microsoft</p>
+            <div class="hero-cta">
+                <a href="#experience" class="btn btn-primary">View Experience</a>
+                <a href="Leander_Mathisen_Resume.pdf" download class="btn btn-outline">
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
             </div>
         </div>
-        <div class="scroll-btn">
-            <div class="scroll-bar">
-                <a href="#about">
-                    <span>
-                    </span>
+        <div class="scroll-indicator">
+            <a href="#about"><span></span></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="images/profilepicture.jpg" alt="Leander Mathisen">
+                </div>
+                <div class="about-text reveal">
+                    <p>
+                        Hi, I'm Leander Mathisen — a Software Engineer II at Microsoft with a Bachelor of Applied Science in Computer Engineering from the University of Toronto.
+                    </p>
+                    <h3>Skills</h3>
+                    <div class="skills">
+                        <span class="skill-badge">C#/.NET</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">C/C++</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">HTML/CSS</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Kubernetes</span>
+                        <span class="skill-badge">SQL</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!--User-Info Section-->
-    <section id="user-info">
-        <div class="nav-bar">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#"><img src="images/Logo.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#about">ABOUT ME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#resume">RESUME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#projects">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">CONTACT</a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
-        </div>
-        
-        <!--About Me-->
-        <div class="about container" id="about">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="images/profilepicture.jpg" class="profile-img">
-                </div>
-                <div class="col-md-6">
-                    <h3>ABOUT ME</h3>
-                    <p>
-                        Hi my name is Leander Mathisen. I am currently an undergraduate Computer Engineering Student at the University of Toronto. I am seeking software internships for Summer 2020.
-                    </p>
-                    <h4>Languages</h4>
-                    <div class="row">
-                        <div class="col-md-2 text-center">
-                            <p>Python</p>
-                        </div>
-                        <div class="col-md-2 text-center">
-                            <p>Java</p>
-                        </div>
-                        <div class="col-md-2 text-center">
-                            <p>C/C++</p>
-                        </div>
-                        <div class="col-md-2 text-center">
-                            <p>Javascript</p>
-                        </div>
-                        <div class="col-md-2 text-center">
-                            <p>HTML/CSS</p>
-                        </div>
-                        <div class="col-md-2 text-center">
-                            <p>SQL</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!--Resume-->
-        <div class="resume" id="resume">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3 class="text-center">My Experiences</h3>
-                        <ul class="timeline">
-                            <li>
-                                <h4>Embedded Systems Developer <span>2019-2020</span></h4>
-                                <p>
-                                    <b>University of Toronto Robotics Association</b><br>
-                                    I am an Embedded Systems Developer using Arduino Language to program movement in a robot's movement in UTRA's SUMO division.<br>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="text-center">My Education</h3>
-                        <ul class="timeline">
-                            <li>
-                                <h4>Bachelor of Applied Science <span>2019-2023</span></h4>
-                                <p>
-                                    <b>University of Toronto</b><br>
-                                    Major in Computer Engineering.<br>
-                                </p>
-                            </li>
-                            <li>
-                                <h4>International Baccalaureate Diploma <span>2017-2019</span></h4>
-                                <p>
-                                    <b>Washington International School</b><br>
-                                    Completed with higher levels in Mathematics, Physics, and Chemistry and standard levels in Economics, Spanish, and English.<br>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Projects-->
-        <div class="projects" id="projects">
-            <div class="container">
-                <h1 class="text-center">My Projects</h1>
-                <p class="text-center">A collection of some of my past projects.</p>
-                <div class="row">
-                    <div class="col-md-4">
-                            <div class="projects-box">
-                                <a href="github.com/leandermathisen/Virtual-Assistant">
-                                    <i class="fa fa-clipboard"></i><span>Virtual Personal Assistant</span>
-                                    <p>Developed a virtual personal assistant that is voice commanded and can do functions such as getting time and weather.</p>
-                                </a>
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">Experience & Education</h2>
+            <div class="experience-stack">
+                <div class="experience-col">
+                    <h3 class="col-title reveal"><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <h4>Software Engineer II</h4>
+                                    <span class="timeline-date">March 2023 - Present</span>
+                                </div>
+                                <p class="timeline-company">Microsoft</p>
+                                <p class="timeline-desc">Description coming soon.</p>
                             </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="projects-box">
-                            <a href="https://github.com/leandermathisen/Twitter-Clone">
-                                <i class="fa fa-twitter"></i><span>Twitter iOS App Clone</span>
-                                <p>Created an app for iOS with the same basic functionality as that of the Twitter App.</p>
-                            </a>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <h4>Software Engineer</h4>
+                                    <span class="timeline-date">Oct 2023 - March 2026</span>
+                                </div>
+                                <p class="timeline-company">Microsoft</p>
+                                <p class="timeline-desc">Description coming soon.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <h4>Software Engineer Intern</h4>
+                                    <span class="timeline-date">May 2022 - Aug 2022</span>
+                                </div>
+                                <p class="timeline-company">Microsoft</p>
+                                <p class="timeline-desc">Description coming soon.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <h4>Software Engineer Intern</h4>
+                                    <span class="timeline-date">20XX</span>
+                                </div>
+                                <p class="timeline-company">Digital Global Systems</p>
+                                <p class="timeline-desc">Description coming soon.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="projects-box">
-                            <a href="https://github.com/leandermathisen/3DTicTacToe">
-                                <i class="fa fa-hashtag"></i><span>3D Tic Tac Toe</span>
-                                <p>Created a playable two user version of 3 dimensional Tic Tac Toe.</p>
-                            </a>
+                </div>
+                <div class="experience-col">
+                    <h3 class="col-title reveal"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <h4>Bachelor of Applied Science</h4>
+                                    <span class="timeline-date">2019 - 2023</span>
+                                </div>
+                                <p class="timeline-company">University of Toronto</p>
+                                <p class="timeline-desc">Major in Computer Engineering.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!--Contact-->
-        <div class="contact" id="contact">
-            <div class="container text-center">
-                <h1>Contact Me</h1>
-                <p class="text-center">Feel free to contact me if you have any questions.</p>
-                <div class="row">
-                    <div class="col-md-3">
-                        <i class="fa fa-phone"></i>
-                        <p>+1 4168446480</p>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa fa-envelope"></i>
-                        <p>leandermathisen1@gmail.com</p>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="github.com/leandermathisen">
-                            <i class="fa fa-github"></i>
-                            <p>www.github.com/leandermathisen.com</p>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="linkedin.com/in/leander-mathisen">
-                            <i class="fa fa-linkedin"></i>
-                            <p>www.linkedin.in/leander-mathisen</p>
-                        </a>
-                    </div>
-                </div>
-                <a href="Leander_mathisen_resume.pdf" download>
-                    <button type="button" class="btn btn-primary"><i class="fa fa-download"></i>Resume</button>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Projects</h2>
+            <p class="section-subtitle reveal">A collection of some of my past projects.</p>
+            <div class="projects-grid">
+                <a href="https://github.com/leandermathisen/Virtual-Assistant" class="project-card reveal">
+                    <div class="project-icon"><i class="fa-solid fa-clipboard"></i></div>
+                    <h3>Virtual Personal Assistant</h3>
+                    <p>Developed a virtual personal assistant that is voice commanded and can do functions such as getting time and weather.</p>
+                    <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <a href="https://github.com/leandermathisen/Twitter-Clone" class="project-card reveal">
+                    <div class="project-icon"><i class="fa-brands fa-twitter"></i></div>
+                    <h3>Twitter iOS App Clone</h3>
+                    <p>Created an app for iOS with the same basic functionality as that of the Twitter App.</p>
+                    <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <a href="https://github.com/leandermathisen/3DTicTacToe" class="project-card reveal">
+                    <div class="project-icon"><i class="fa-solid fa-hashtag"></i></div>
+                    <h3>3D Tic Tac Toe</h3>
+                    <p>Created a playable two user version of 3 dimensional Tic Tac Toe.</p>
+                    <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-right"></i></span>
                 </a>
             </div>
         </div>
     </section>
-    
-    <!--Smooth Scroll-->
-    <script src="smooth-scroll.js"></script>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p class="section-subtitle reveal">Feel free to reach out if you have any questions.</p>
+            <div class="contact-grid reveal">
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+1 (202) 344-0659</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>leandermathisen1@gmail.com</p>
+                </div>
+                <a href="https://github.com/leandermathisen" class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <p>github.com/leandermathisen</p>
+                </a>
+                <a href="https://linkedin.com/in/leander-mathisen" class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p>linkedin.com/in/leander-mathisen</p>
+                </a>
+            </div>
+            <div class="contact-cta reveal">
+                <a href="Leander_Mathisen_Resume.pdf" download class="btn btn-outline-light">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Reveal Script -->
     <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Close mobile nav on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
     </script>
+
 </body>
 </html>
