@@ -95,8 +95,12 @@
                                     <h4>Software Engineer II</h4>
                                     <span class="timeline-date">Mar 2026 - Present</span>
                                 </div>
-                                <p class="timeline-company">Microsoft</p>
-                                <p class="timeline-desc">Description coming soon.</p>
+                                <p class="timeline-company">Microsoft — Azure Event Hubs, Service Bus, and Relay Resource Provider | Fabric Eventstream</p>
+                                <ul class="timeline-bullets">
+                                    <li>Resolved orphaned private network connections blocking connector releases by developing a custom AKS deployment to monitor and clean up orphans caused by Strimzi interactions, eliminating recurring stuck pod investigations each upgrade cycle and unblocking a stalled release upon deployment.</li>
+                                    <li>Delivered full production rollout of two new messaging connectors: a Sample Data connector architected with shared Kafka clusters, optimized Java file parsing, and persistent volumes to support over 12,000 active instances on minimal resources, and an HTTP connector secured with a custom Java Anti-SSRF library to block internal IP range access before Public Preview release.</li>
+                                    <li>Improved service reliability through on-call rotations and production incident investigations, shipping fixes for noisy managed identity refresh alerts, customer-managed encryption key enablement, disaster recovery validation, and service association link creation polling to reduce incident volume and improve customer experience.</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="timeline-item reveal">
@@ -107,8 +111,13 @@
                                     <h4>Software Engineer</h4>
                                     <span class="timeline-date">Oct 2023 - Mar 2026</span>
                                 </div>
-                                <p class="timeline-company">Microsoft</p>
-                                <p class="timeline-desc">Description coming soon.</p>
+                                <p class="timeline-company">Microsoft — Azure Event Hubs, Service Bus, and Relay Resource Provider</p>
+                                <ul class="timeline-bullets">
+                                    <li>Enabled Cosmos DB migration across all production regions by building an automated daily test pipeline with Azure Functions, optimizing queries with composite indexes to reduce request unit costs by ~20%, and implementing namespace flags that reduced the largest production container usage by up to 80%.</li>
+                                    <li>Delivered 100% disaster recovery migration to the regional resource provider by refactoring orchestrations into versioned APIs, implementing authorization rules, name availability checks, and Standard-to-Premium migration endpoints, and creating background reconciliation jobs for failed operations.</li>
+                                    <li>Implemented private networking support for messaging connectors end-to-end, including a network resource provider client for virtual network validation and service association link lifecycle management, enabling end-to-end testing from the Fabric portal.</li>
+                                    <li>Strengthened service reliability by leading production incident investigations and managed identity fixes, raising test pipeline success rates from below 20% to 50% while halving run duration, building stress test pipelines for continuous regression detection, and creating an internal repair controller to preemptively resolve known issues.</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="timeline-item reveal">
@@ -119,8 +128,12 @@
                                     <h4>Software Engineering Intern</h4>
                                     <span class="timeline-date">May 2022 - Aug 2022</span>
                                 </div>
-                                <p class="timeline-company">Microsoft</p>
-                                <p class="timeline-desc">Description coming soon.</p>
+                                <p class="timeline-company">Microsoft — Azure Event Hubs</p>
+                                <ul class="timeline-bullets">
+                                    <li>Created three endpoints in the Kafka management protocol handler for Azure Portal consumer group management—batch offset fetching, partition message queue information fetching, and offset committing—leveraging coordinator controller and Kafka runtime channels to execute requests.</li>
+                                    <li>Developed unit tests with Shared Access Signature authentication that created sample Kafka consumers and validated all three consumer group management endpoints end-to-end.</li>
+                                    <li>Drafted orchestration tasks to maintain a Cosmos DB for host OS upgrades of dedicated node groups, coordinating node upgrade scheduling through tracked update timestamps checked and updated by orchestration workflows.</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="timeline-item reveal">
